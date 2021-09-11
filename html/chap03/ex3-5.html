@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 폼</title></head>
+<body>
+<h3>로그인 폼</h3>
+<hr>
+<form name="fo" action="https://search.daum.net/search" method="get">
+사용자 ID : <input name="q" type="text" size="15" value=""><br>
+비밀 번호 : <input type="password" size="15" value="">
+<input type="submit" value="완료">
+</form>
+</body>
+</html>
+
+<!--웹에서 클라이언트가 서버로 어떤 정보를 전송하려면 반드시 form 태그를 써야 한다.
+http와 서버간에 통신하는 방법이 딱 두가지인데 그게 GET과 POST다.
+https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=&q=%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8
+이게 GET방식의 전송방법인데 변수명 지정하듯이 어떤 항목에 값을 넣어주는 것을 말한다.
+이 방식의 장점은 쉽다는 것과 검색시 해당 형식에 맞는 검색결과를 항상 제공해준다는것이다.
+주소창을 복사 붙여넣기 해서 다시 언제고 이용할 수 있다는점을 말하는것이다. 또한 검색어로
+다른것을 집어넣어도 형식에 맞는 결과를 제공한다.
+단점으로는 긴정보를 보낼수 없다는것과 검색과정이 노출되므로 보안상 누가 트래픽을 훔쳐본다면
+해킹의 우려가 있다는 것이다.
+
+POST는 이와 정반대의 장단점을 가진다. post의 경우 이러한 주소를 볼 수 없는데 GET과는 다르게 이러한 주소를 복사했다가
+다른 검색에 활용하는게 불가능하다.
+
+action은 어디로 보낼지 결정하는 부분인데 submit을 해도 서버가 없으니 응답이 없으므로
+어떻게든 서버없이 강의를 진행해보고자 해서 daum 검색 주소를 넣어봤다.-->

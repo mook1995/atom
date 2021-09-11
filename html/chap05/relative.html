@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>relative 배치</title>
+<style>
+div {
+	display : inline-block;
+ 	background : red;
+ 	height : 50px;
+ 	width : 50px;
+ 	border: 1px solid lightgray;
+	color : white;
+	text-align : center
+}
+#down {
+    position : relative;
+    left : 20px;
+    /*왼쪽에 공백을 20px만큼 주겠다는것이다.*/
+    top : 20px;
+    /*위쪽에 공백을 20px만큼 주겠다는것이다.*/
+   	background: green;
+}
+#up {
+    position : relative;
+    right : 20px;
+    bottom : 20px;
+   	background : green;
+}
+</style></head>
+<body>
+<!-- <h3>상대 배치, relative</h3>
+<hr> -->
+<br><br>
+<div>T</div>
+<div id="down">h</div>
+<div >a</div>
+<div>n</div>
+<div id="up">k</div>
+<div>s</div>
+</body>
+</html>
+
+
+
+<!--상대배치 방식: 기본적으로 박스는 default가
+static으로 정해져 있다. 그걸 바궈보자-->

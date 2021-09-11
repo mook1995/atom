@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title> 실습_계산기 만들기 </title>
+  <style>
+    #keypad button{
+      width:60px;
+      height: auto;
+      padding: 1px, 1px;
+      float: center;
+      cursor: pointer;
+      text-align: center;
+    }
+    #result {
+      width: 300px;
+      margin-bottom: 5px;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function CE() {
+      let result=document.querySelector("#result");
+      result.value = "";
+    }
+
+    function CAL() {
+      let result=document.querySelector("#result");
+      result.value = eval(result.value);
+    }
+
+    function BACK() {
+      let result=document.querySelector("#result");
+      result.value = result.value.substring(0, result.value.length -1);
+
+    }
+
+    function ADD(num) {
+      let result=document.querySelector("#result");
+      result.value += num;
+    }
+
+  </script>
+</head>
+<body>
+  <h3>계산기 만들기</h3>
+  <hr>
+  <input type='text' id="result" value="" placeholder="0"><br>
+
+     <div id="keypad">
+       <button id="button_back" onclick="BACK()">BACK</button>
+       <button id="button_ce" onclick="CE()">CE</button>
+       <button id="button_c" onclick="CE()">C</button>
+       <button id="button_cal" onclick="CAL()">SEX</button><br>
+
+       <button id="button" onclick="ADD(1)">1</button>
+       <button id="button" onclick="ADD(2)">2</button>
+       <button id="button" onclick="ADD(3)">3</button>
+       <button id="button" onclick="ADD('+')">+</button><br>
+
+       <button id="button" onclick="ADD(4)">4</button>
+       <button id="button" onclick="ADD(5)">5</button>
+       <button id="button" onclick="ADD(6)">6</button>
+       <button id="button" onclick="ADD('-')">-</button><br>
+
+       <button id="button" onclick="ADD(7)">7</button>
+       <button id="button" onclick="ADD(8)">8</button>
+       <button id="button" onclick="ADD(9)">9</button>
+       <button id="button" onclick="ADD('/')">/</button><br>
+
+       <button id="button" onclick="">NONE</button>
+       <button id="button" onclick="ADD(0)">0</button>
+       <button id="button" onclick="">NONE</button>
+       <button id="button" onclick="ADD('*')">*</button>
+
+
+
+    </div>
+</body>
+</html>

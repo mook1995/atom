@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트</title>
+<script>
+function sayHi() // let sayHi = function()이라고 써도 적용이된다.
+{
+  alert( "Hello" );
+}
+sayHi();
+//first class function와 같은 개념으로 적용된다.
+let func = sayHi;
+func();
+alert(func);
+//자바스크립트는 함수 이름만 주면 함수자체의 소스코드가 출력된다.
+</script>
+</head>
+<body>
+
+</body>
+</html>

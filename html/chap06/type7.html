@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트</title>
+<script>
+alert(0 == false);
+//false를 0으로 바꾼다,.
+alert('' == false);
+//false를 0 으로 바꾸고 빈문자열도 0으로 바꾼다.
+alert(0 === false);
+alert('' === false);
+//형변환 없이 equal 비교를 하고싶을때는 =기호를 세번 써준다.
+alert(null == undefined);
+//null은 말그대로 값이 없다는 것이고 undefined는 해당 변수가 선언이 되어있지 않다는 말임
+//선언자체가 안되어있다는것임
+alert(null === undefined);
+alert(null > 0);
+alert(null == 0);
+//위와 같은 경우는 비교가 안되기 때문에 둘 다 false가 나오는데
+alert(null >= 0);
+alert(null <= 0);
+//이렇게 쓰면 true가 나온다.
+//이 때는 null을 숫자 0으로 바꾸기 때문이다.
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,8 @@
+1.html은 Atom Editor, Notepad++, Sublime Text 셋중에 하나를 설치하여 실습하는게 정말 편합니다.
+
+atom의 경우 설치한 뒤에 파일 열기시 file- settings- system에서 체크해줘야 default 로 atom이 열린다.   
+
+
+
+js 개념정리 :
+https://wormwlrm.github.io/2018/10/03/What-is-the-difference-between-javascript-and-ecmascript.html

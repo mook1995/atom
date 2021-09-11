@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>박스 모델</title>
+<style>
+body {	background : ghostwhite; }
+span { background : deepskyblue; }
+div.box {
+	background : yellow;
+	border-style : dotted;
+	border-color : Peru;
+
+	margin : 60px;
+  /*margin: 상하좌우 간격*/
+	border-width : 10px;
+  /*border는 당연히 경계면을 말하는것임*/
+	padding : 20px;
+  /*padding:부모입장에서 자식객체와의 간격을 말하는 것임*/
+}
+</style>
+</head>
+<body>
+<div class="box">
+	<span>DIVDIVDIV</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>객체</title>
+<script>
+  // let user = new Object();
+  // let user1 = {};
+//자바 스크립트는 특이하게 위와 같은 방법으로 빈 객체를 생성해줄 수 있다.
+  let user = {
+    name: 'John',
+    age: 30,
+    "likes birds": true
+  };
+  //자바스크립트 객체는 키와 벨류 쌍으로 이루어져있어서 파이썬의 딕셔너리와 비슷하다.
+  //이걸 JSON이라 하는이유를 알수 있는 부분이다.
+  //JSON(java script object  notation....)
+  alert(user.name);
+  alert(user.age);
+  user.isAdmin = true;
+  alert(user.isAdmin);
+  delete user.isAdmin;
+  alert(user.isAdmin);
+  //삭제했기 때문에 출력이 되지 않는다.
+  //alert(user."likes birds"); //이렇게 뽑을려고 하면 에러가난다.
+  alert(user["likes birds"]);
+
+  let fruit = prompt("어떤 과일 구매?", "apple");
+  let bag = {
+    [fruit]: 5
+  };
+  alert(bag.apple);
+
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

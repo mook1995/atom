@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>계산기 만들기</title>
+</head>
+<style> /* CSS 부분 */
+  #btn_group button{
+
+    /* font-style: italic; */
+    /* font-style: Fantasy; */
+
+    width: 60px;
+    /* width: 100%; */
+    height: auto;
+    padding: 1px, 1px;
+    float: center;
+    cursor: pointer;
+    text-align: center;
+
+    border-width: 5px;
+    border-color: white;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+  }
+  #text_box {
+    width: 300px;
+    /* width: 100%;  */
+    border-width: 2px;
+    border-color: blue;
+    margin-bottom: 5px;
+  }
+
+</style>
+<script type="text/javascript">  // JavaScript 부분
+  function CE() {
+    let text_box = document.querySelector("#text_box");  // text_box에서 값을 읽어온다.
+    text_box.value = ""; // text_box라는 변수의 값을 0으로 준다.
+  }
+  function CAL() {
+    let text_box = document.querySelector("#text_box");
+    text_box.value = eval(text_box.value);  // eval -> JS의 수식을 계산해주는 기능 (ex: eval(4+4) ->8 )
+  }
+  function BACK() {
+    let text_box = document.querySelector("#text_box");
+    // text_box.value = slice(0, -1)  // 문자가 존재하지 않을경우 문제 발생 가능.
+    // text_box.value = text_box.value.substring(0, text_box.value.length() -1); //-> 이건 자바문법. JS는 str.length() -> str.length
+    // text_box.value = text_box.value.substring(0, 3); -> [1,2,3,4] 중에서 -> 1,2,3 만 뽑는 기능
+    text_box.value = text_box.value.substring(0, text_box.value.length -1);
+  }
+  function append(num) {  //  괄호안의 (num)은 int형이 아니라 그냥 변수임. qqq등으로 바꿔써도 상관없음
+    let text_box = document.querySelector("#text_box");
+    text_box.value += num;
+  }
+
+</script>
+<body>
+<h2>계산기 만들기</h2>
+<hr>  <!-- html 부분 -->
+<input type="text" id="text_box" value="" placeholder="0"><br>  <!-- placeholder -> text_box안쪽에 투명글씨 써놓기 -->
+
+<div id="btn_group">
+  <button id = "button_BACK" onclick="BACK()">BACK</button>
+  <button id = "button_CE" onclick="CE()">CE</button>  <!-- onclick이후 CE면 안됨 -> CE()로 괄호 있어야함 -->
+  <button id = "button_C" onclick="CE()">C</button>
+  <button id = "cal" onclick="CAL()">=</button><br>
+
+  <button id="button(7)" onclick="append(7)">7</button>
+  <button id="button(8)" onclick="append(8)">8</button>
+  <button id="button(9)" onclick="append(9)">9</button>
+  <button id="button(/)" onclick="append('/')">/</button><br>
+
+  <button id="button(4)" onclick="append(4)">4</button>
+  <button id="button(5)" onclick="append(5)">5</button>
+  <button id="button(6)" onclick="append(6)">6</button>
+  <button id="button(*)" onclick="append('*')">*</button><br>
+
+  <button id="button(1)" onclick="append(1)">1</button>
+  <button id="button(2)" onclick="append(2)">2</button>
+  <button id="button(3)" onclick="append(3)">3</button>
+  <button id="button(-)" onclick="append('-')">-</button><br>
+
+  <button id="button(0)" onclick="append(0)">0</button>
+  <button id="button(+)" onclick="append('+')">+</button>
+  <button>NONE</button>
+  <button>NONE</button>
+</div>
+
+</body>
+</html>

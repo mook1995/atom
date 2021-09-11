@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트</title>
+<script>
+  let userName = 'John';
+  function showMessage() {
+    var message = "Hello" + userName;
+
+    {
+      //let message2 = "world";
+      var message2 = "world";
+      //var로 선언된 변수는 스코프가 더 넓기 때문에 원하지 않은 결과를
+      //출력할수 있기때문에  echma6부터는 let을 쓰기로 한다.
+      //alert(message2);
+    };
+
+    //alert(message);
+    alert(message2);
+    alert(message);
+    //alert(message2);
+    //let으로 선언시 변수의 스코프에 의해 출력이안됨
+
+  }
+  showMessage();
+  //alert(message);
+  //alert(message);
+  //let으로 선언시 변수의 스코프에 의해 출력이안됨
+</script>
+</head>
+<body>
+
+</body>
+</html>

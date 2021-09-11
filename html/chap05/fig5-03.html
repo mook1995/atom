@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>block</title>
+<style>
+div {
+	border : 1px solid yellowgreen;
+}
+span {
+	display : block;
+  /*span은 inline tag라 좌우로 부터야 하지만
+  여기서 속성을 바꿔줬기 때문에 block tag 처럼
+  새로운 줄을 먹으면서 표시가 되도록 한다.*/
+	background : powderblue;
+	border : 1px dotted orangered ;
+	width : 100px; height : 40px;
+}
+</style></head>
+<body>
+<h3>&lt;span&gt;를 display:block으로</h3>
+<hr>
+<div><span>block span</span>과<span>block span</span>입니다.
+</div>
+</body>
+</html>

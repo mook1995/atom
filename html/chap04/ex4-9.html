@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>셀렉터 만들기</title>
+<style>
+div > strong {color: dodgerblue;}
+/*div의 직계자손의 Strong에 스타일을 지정*/
+/*li > strong {color: red;}*/
+ul strong {color: red;}
+/*ul의 자식중에 strong이 있으면 그것의 스타일로 지정한다. 전자와 의 차이점은
+조상 자식간의 차이가 몇단계든 상관없이 찾는다는것이고 꺽쇠로 표시할경우
+바로 직계자손인 경우만 가능하다. */
+
+h3, li {color: brown;}
+.warning {color: red;}
+body.main {background: aliceblue;}
+/*위와 같이 클래스에 모두 적용하든지 특정 셀렉터에 있는 클래스에만 적용하든지
+하도록 선택할 수 있다. 클래스는 . id는 #이다*/
+#list {background: yellow;}
+
+li:hover {background: yellowgreen;}
+/*psuedo class는 콜론 :으로 표시한다.
+,psuedo class(가상클래스: 동작중에 등장하는 클래스?)*/
+
+</style>
+
+</head>
+<body class="main">
+<h3>Web Programming</h3>
+<hr>
+<div>
+	<div>2학기 <strong>학습 내용</strong>입니다.</div>
+	<ul id="list">
+ 		<li><span>HTML5</span></li>
+		<li><strong>CSS</strong></li>
+		<li>JAVASCRIPT</li>
+	</ul>
+	<div class="warning">60점 이하는 F</div>
+</div>
+</body>
+</html>

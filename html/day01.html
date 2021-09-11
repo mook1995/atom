@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!--이 문서는 html 버젼5라는 것을 알려주는 문장임
+브라우저가 맨 첫줄에 !DOCTYPE html만나면 버전 5라고 인식함 -->
+<html><!-- #html을 열고 닫는 태그임 -->
+<head> <!-- #html안에 head와 body로 구성된다.-->
+<meta charset="UTF-8"><!-- #여기서 쓰인 모든 코드는 utf-8로 해석하겠다는 말로
+#전세계 표준이다.-->
+<title>웹 페이지의 구성 요소</title>
+</head>
+<body>  <!--실제로 화면에 뿌려지는 것들은 이 body안에 있는것들이다.-->
+<h3>Elvis Presley</h3>
+<hr>
+He was an American singer and actor. In November 1956,
+he made his film debut in <span>Love Me Tender</span>.
+He is often referred to as "<span>the King of Rock and Roll</span>".
+</body>
+</html>
+
+<!--이 파일을 드래그해서 웹브라우저에 던져놓으면 웹브라우저에서 엔진을 이용해 body안에
+이 정보를 해석한다.
+이제 실습을 하기에 앞서 간이 웹서버 WAS 환경을 구현해 줄것이다.
+anaconda prompt에서 서버를 구현하고자 하는 경로로 이동시켜준다.
+
+기본적으로 웹서버는 포트번호로 80을 쓴다. 이건 전세계 공통이다.
+그래서 우리는 9000번을 쓸것이다.
+python -m http.server 9000
+
+브라우저에서 주소창에 http://localhost:9000/day01.html을 입력하고 이동 -->

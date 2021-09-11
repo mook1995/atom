@@ -1,0 +1,25 @@
+from django.shortcuts import render, get_object_or_404
+from noticeboard.models import Notice
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
+
+from django.shortcuts import render, get_object_or_404
+from noticeboard.models import Notice
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
+from django.shortcuts import render, get_object_or_404
+from noticeboard.models import Notice
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
+
+
+
+
+write_article
+from django.shortcuts import render, get_object_or_404
+from noticeboard.models import Notice
+from django.http import HttpResponseRedirect
+from django.urls import reverse

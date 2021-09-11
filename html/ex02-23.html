@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe을 이용한 신문 사이트</title></head>
+<body>
+<h3>2 개의 신문 사이트입니다.</h3>
+<hr>
+<iframe src="http://www.etnews.com" name="upper" width="300" height="300"></iframe>
+<iframe src="http://www.naver.com" name="lower" width="300" height="300"
+srcdoc="<html><head></head><body>hello</body><html>"></iframe>
+</body>
+</html>
+
+<!--naver.나 kakao 같은 대형 포털의 경우 해킹을 방지하기 위해 inline frame에서
+서비스되는 것을 자동으로 방지한다.
+srcdoc = 과 같이 쓰면 해당 attribute안에 있는 value를 html source로 읽어들일수 있다. -->

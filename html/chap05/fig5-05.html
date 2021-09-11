@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>inline-block</title>
+<style>
+div div {
+	display : inline-block;
+  /*display 자체를 inline으로 출력하는데
+  block객체처럼 margin, border를 줄수 있도록 한것이다.
+  기본적으로 inline은 margin, border등이 없는데
+  block만 가능한것이기 떄문이다.*/
+	border : 2px dotted orangered;
+	background : powderblue;
+	margin : 10px;
+	width : 60px; height : 80px;
+}
+</style></head>
+<body>
+<h3>&lt;span&gt;를 display:block으로</h3>
+<hr>
+<div style="background : orange">
+	<div>inline-block DIV</div>
+	<div>inline-block DIV</div>
+	<div>inline-block DIV</div>
+</div>
+</body>
+</html>
