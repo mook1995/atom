@@ -29,6 +29,8 @@ flush privileges;
 
 D:\Python_Exercise> conda create -n board-env python=3.7
 
+##(board-env)D:/python_Exercise> 
+
 conda update -n base conda
 
 conda update --all
